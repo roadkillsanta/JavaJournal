@@ -1,33 +1,24 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/x6ckGcN8)
-# 3500 PA05 Project Repo
-
-[PA Write Up](https://markefontenot.notion.site/PA-05-8263d28a81a7473d8372c6579abd6481)
+# JavaJournal
 
 # [Pitch]
-## Section 2: Headlining Features
+## Features
 - Task Queue
 - - There is a sidebar next to weeks holding all the tasks
   - Task can be set completed from here
 - Categories
 - - Each week has categories that can be assigned to Events and Tasks
   - Different categories are separated by colors
-## Section 3: Power Ups
 - Mini Viewer
 - - Each task and event can be pressed to show a screen showing the details of the occurrence
 - Takesie-backsies
 - - The Mini-Viewer screen allows for the tasks and events to be deleted
 - Custom Ordering
 - - Each occurrence has an up and down button to sort it in its day
-
-## Section 4: Quality of Life
 - Mind Changes
 - - The Mini-Viewer allows for the occurrences to be edited
 - Week Tabs
 - - Each Week has an associated tabS
   - Week Tabs can be deleted and created
-
-
-## Section 5: Extra Credit
 - Splash Screen
 - - There is a screen at the start of the journal that fades in and out
 - Private Lock
