@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Scene xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane prefHeight="371.0" prefWidth="420.0" style="-fx-border-color: black;">
+        <VBox layoutX="-4.0" layoutY="6.0" prefHeight="364.0" prefWidth="432.0" spacing="3.0">
+            <HBox alignment="CENTER" prefHeight="41.0" prefWidth="387.0" spacing="10.0">
+                <Label alignment="CENTER_RIGHT" text="Name: ">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="nameInput" prefHeight="25.0" prefWidth="230.0" />
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="35.0" prefWidth="390.0" spacing="15.0">
+                <Button fx:id="eventButton" mnemonicParsing="false" text="Event" />
+                <Button fx:id="taskButton" mnemonicParsing="false" text="Task" />
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="378.0" spacing="5.0">
+                <Label prefHeight="20.0" prefWidth="84.0" text="Description: ">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextArea fx:id="description" prefHeight="99.0" prefWidth="175.0" />
+            </HBox>
+         <HBox alignment="CENTER" prefHeight="35.0" prefWidth="310.0" spacing="8.0">
+            <children>
+               <Label text="Category: ">
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+               </Label>
+               <ChoiceBox fx:id="categoryChoices" prefWidth="150.0" />
+            </children>
+         </HBox>
+            <HBox alignment="CENTER">
+                <VBox.margin>
+                    <Insets bottom="5.0" top="5.0" />
+                </VBox.margin>
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="44.0" text="Day:">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets top="2.5" />
+                    </HBox.margin>
+                </Label>
+                <Button fx:id="daySun" mnemonicParsing="false" text="Sun" />
+                <Button fx:id="dayMon" mnemonicParsing="false" text="Mon" />
+                <Button fx:id="dayTue" mnemonicParsing="false" text="Tue" />
+                <Button fx:id="dayWed" mnemonicParsing="false" text="Wed" />
+                <Button fx:id="dayThu" mnemonicParsing="false" text="Thu" />
+                <Button fx:id="dayFri" mnemonicParsing="false" text="Fri" />
+                <Button fx:id="daySat" mnemonicParsing="false" text="Sat" />
+            </HBox>
+            <VBox alignment="TOP_CENTER" prefHeight="69.0" prefWidth="378.0" spacing="5.0">
+                <HBox alignment="CENTER" prefHeight="36.0" prefWidth="378.0" spacing="15.0">
+                    <Label prefWidth="82.0" text="Start Time: ">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                    </Label>
+               <TextField fx:id="hourStartTimeInput" prefHeight="26.0" prefWidth="34.0" />
+                    <Label text=":">
+                  <font>
+                     <Font size="14.0" />
+                  </font></Label>
+               <TextField fx:id="minuteStartTimeInput" prefHeight="26.0" prefWidth="34.0" />
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="36.0" prefWidth="378.0" spacing="5.0">
+                    <Label prefHeight="21.0" prefWidth="73.0" text="Duration:">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                    </Label>
+                    <Spinner fx:id="hourDurationInput" prefHeight="26.0" prefWidth="81.0" />
+                    <Label text="hrs." />
+                    <Spinner fx:id="minuteDurationInput" prefHeight="26.0" prefWidth="81.0" />
+                    <Label text="mins." />
+                </HBox>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="390.0" spacing="270.0">
+                <Button fx:id="submitButton" mnemonicParsing="false" text="Submit" />
+                <Button fx:id="deleteButton" mnemonicParsing="false" text="Delete" />
+            </HBox>
+        </VBox>
+    </AnchorPane>
+</Scene>
